@@ -6,7 +6,7 @@ $(function () {
     $(document).ready(function(){
       // add saveBtn event listener
       $(".saveBtn").on('click', function(){
-        var text = $(this).sibling(".description").val();
+        var text = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
         // save in local storage
         localStorage.setItem(time,text);
@@ -52,7 +52,9 @@ $(function () {
     // TODO: Add code to get any user input that was saved in localStorage and set
     // the values of the corresponding textarea elements. HINT: How can the id
     // attribute of each time-block be used to do this?
-      
+    
+
+    timeTracker();
 
     // TODO: Add code to display the current date in the header of the page.
     $("#currentDay").text(dayjs().format("dddd, MMMM DD"));
