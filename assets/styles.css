@@ -32,9 +32,10 @@ textarea {
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: #addbf2;
   color: #000000;
   border-top: 1px dashed #000000;
+  font-weight: bold;
 }
 
 .past {
@@ -51,6 +52,9 @@ textarea {
   background-color: #77dd77;
   color: white;
 }
+#currentDay{
+  font-weight: bold;
+}
 
 .saveBtn {
   border-left: 1px solid black;
@@ -63,4 +67,5 @@ textarea {
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+  color: #a8d5f4;
 }
