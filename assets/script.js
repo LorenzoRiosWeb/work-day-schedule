@@ -52,6 +52,8 @@ $(function () {
     // TODO: Add code to get any user input that was saved in localStorage and set
     // the values of the corresponding textarea elements. HINT: How can the id
     // attribute of each time-block be used to do this?
+
+    // will get items from the local storage if there are any to retrive
     $("#hour8  .description").val(localStorage.getItem("hour8"));
     $("#hour9  .description").val(localStorage.getItem("hour9"));
     $("#hour10 .description").val(localStorage.getItem("hour10"));
@@ -63,6 +65,7 @@ $(function () {
     $("#hour16 .description").val(localStorage.getItem("hour16"));
     $("#hour17 .description").val(localStorage.getItem("hour17"));
 
+    
     timeTracker();
 
     // TODO: Add code to display the current date in the header of the page.
