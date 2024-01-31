@@ -27,7 +27,8 @@ $(function () {
       // loop that goes over time blocks
       $(".time-block").each(function () {
         var blockTime = parseInt($(this).attr("id").split("hour")[1]);
-
+        // changed id selector to class selector
+        
         // .each itrates over the DOM elements that are part of the jquery objects.
         // https://api.jquery.com/each/
         // will check if blockTime is equal, less, or greater than timeNow
