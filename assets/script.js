@@ -25,7 +25,7 @@ $(function () {
       // tracker for current hour in dayjs.
       var timeNow = dayjs().hour();
       // loop that goes over time blocks
-      $("#time-block").each(function () {
+      $(".time-block").each(function () {
         var blockTime = parseInt($(this).attr("id").split("hour")[1]);
 
         // .each itrates over the DOM elements that are part of the jquery objects.
